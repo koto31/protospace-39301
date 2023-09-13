@@ -4,7 +4,6 @@
       <h2 class="page-heading">
         <%= "#{@user.name}さんの情報"%>
       </h2>
-     <%# if user_signed_in? && @user == current_user %>
        <table class="table">
          <tbody>
            <tr>
@@ -32,8 +31,7 @@
        </div> 
        <%= render partial: 'prototypes/prototype', collection: @user.prototypes %>
         <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
-       </div>
-      <%# end %>  
+       </div>  
     </div>
   </div>
 </div>
